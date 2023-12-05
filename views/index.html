@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Book Appointment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forn-container">
+        <form action="/user/appointment" method="POST" id="my-form" class="form p-3">
+          <h1>Book Appointment</h1>
+          <hr />
+          <div class="mb-3">
+            <label for="name" class="form-label mb-0">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="name form-control border-2"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label mb-0">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="email form-control border-2"
+              placeholder="Enter Your Email-Id"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label mb-0">Phone:</label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              class="phone form-control border-2"
+              placeholder="Enter Your Phone Number"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label mb-0">Time for Call:</label>
+            <div class="date-time">
+              <input
+                type="date"
+                id="date"
+                name="date"
+                class="date form-control border-2"
+                required
+              />
+              <input
+                type="time"
+                id="time"
+                name="time"
+                class="time form-control border-2"
+                required
+              />
+            </div>
+          </div>
+          <button id="add-btn" class="add-btn btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    
+      <div>
+        <h2>Appointment Details</h2>
+        <hr />
+      </div>
+      <ul id="user-list" class="user-list list-group"></ul>
+    </div>
+  </div>
+  <!-- Include Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include Axios JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Include custom JS -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

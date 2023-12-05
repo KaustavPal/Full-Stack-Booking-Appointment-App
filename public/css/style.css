@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+hr {
+  margin-top: 40px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.form {
+  border: 5px solid rgb(210, 210, 210);
+  border-radius: 10px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 0;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.date-time {
+  display: flex;
+  gap: 10px;
+}
+
+.date,
+.time {
+  width: 50%;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
