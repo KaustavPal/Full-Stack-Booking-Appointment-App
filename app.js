@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const userRoutes = require("./routes/user");
+const defaultRoutes = require("./routes/default");
 const sequelize = require("./util/database");
 
 const app = express();
@@ -16,6 +17,7 @@ app.use(bodyParser.json({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/user", userRoutes);
+app.use(defaultRoutes);
 
 sequelize
   .sync()
